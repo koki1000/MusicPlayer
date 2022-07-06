@@ -1,0 +1,48 @@
+body {
+  background-image: url("../image/img/パターン２.jpg");
+  background-size: cover;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+.form {
+  width: 400px;
+  margin: 130px auto;
+}
+
+.login {
+  font-size: 1.4rem;
+  margin-bottom: 70px;
+}
+
+.login,
+.link_text,
+.link {
+  text-align: center;
+}
+
+.link_text {
+  color: yellow;
+}
+
+.link a {
+  text-decoration: none;
+}
+
+.message {
+  color: red;
+}
+
+button {
+  background-color: blue;
+  color: white;
+}
+
+div {
+  margin-bottom: 50px;
+}
+
+input,
+button {
+  line-height: 2rem;
+  width: 100%;
+}
