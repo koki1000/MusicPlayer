@@ -30,7 +30,7 @@
     楽曲追加時には、楽曲名、アーティスト名、ファイル名必須
     </li>
     <li>
-    アップロードするファイルの最大容量は６０MB
+    アップロードするファイルのサイズに合わせて、php.iniを設定する（確認項目はfile_uploads、post_max_size、max_file_uploads、upload_max_filesize）
     </li>
     <li>
     アップロード可能なファイル形式はmp3,wave,aif,aac,mp4の５種類
