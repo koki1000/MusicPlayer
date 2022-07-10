@@ -33,7 +33,7 @@
     アップロードするファイルのサイズに合わせて、php.iniを設定する（確認項目はfile_uploads、post_max_size、max_file_uploads、upload_max_filesize）
     </li>
     <li>
-    アップロード可能なファイル形式はmp3,wave,aif,aac,mp4の５種類
+    アップロード可能なファイル形式はmp3,wav,wave,aif,aac,mp4の6種類
     </li>
 </ul>
 </div>
