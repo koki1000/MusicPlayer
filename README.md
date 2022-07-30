@@ -1,68 +1,83 @@
-<<<<<<< HEAD
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+<h1>音楽再生アプリ</h1>
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+<h2>アプリケーション名</h2>
+<div>
+<p>MusicPlayer</p>
+</div>
+
+<h2>概要</h2>
+<div>
+<p>楽曲再生するアプリです。<br>
+ユーザーごとにプレイリストを作成するため、会員登録・ログイン・楽曲追加の機能があります。
 </p>
+</div>
+<img width="1440" alt="スクリーンショット 2022-07-06 16 09 35" src="https://user-images.githubusercontent.com/108777169/177490686-ca3eddef-27f9-4cb0-a7d9-a8e707ab6d2c.png">
 
-## About Laravel
+<h2>作成した目的</h2>
+<div>
+<p>
+音楽鑑賞が好きであり自分のスキルでも作れそうだと思ったため
+</p>
+<p>
+プレイヤー部分の再生・停止・一時停止やシークバー操作などをどのように記述すればよいか、興味があったため
+</p>
+</div>
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+<h2>注意事項</h2>
+<div>
+<ul>
+    <li>
+    会員登録時には名前、メールアドレス（＠含む）必須
+    </li>
+    <li>
+    楽曲追加時には、楽曲名、アーティスト名、ファイル名必須
+    </li>
+    <li>
+    アップロードするファイルのサイズに合わせて、php.iniを設定する（確認項目はfile_uploads、post_max_size、max_file_uploads、upload_max_filesize）
+    </li>
+    <li>
+    アップロード可能なファイル形式はmp3,wav,wave,aif,aac,mp4の6種類
+    </li>
+</ul>
+</div>
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+<h2>機能一覧</h2>
+<div>
+<ul>
+    <li>
+    会員登録機能
+    </li>
+    <li>
+    ログイン機能
+    </li>
+    <li>
+    楽曲再生・一時停止・停止
+    </li>
+    <li>
+    シークバー操作、音量調節機能
+    </li>
+    <li>
+    楽曲追加機能
+    </li>
+</ul>
+</div>
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+<h2>使用技術（実行環境）</h2>
+<div>
+<ul>
+    <li>
+    Laravel Framework 8.83.12
+    </li>
+    <li>
+    PHP 8.1.5
+    </li>
+</ul>
+</div>
 
-## Learning Laravel
+<h2>テーブル設計</h2>
+<img width="1440" alt="スクリーンショット 2022-07-25 23 21 41" src="https://user-images.githubusercontent.com/108777169/180800358-a69ee771-3d55-4f8b-bcd7-edf722331091.png">
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+<h2>ER図</h2>
+<img width="1440" alt="スクリーンショット 2022-07-25 23 24 22" src="https://user-images.githubusercontent.com/108777169/180800438-ad180e38-488c-4ba4-b55b-79abaf24a077.png">
 
-## Laravel Sponsors
-
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
-
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
-=======
-# MusicPlayer
->>>>>>> origin/main
