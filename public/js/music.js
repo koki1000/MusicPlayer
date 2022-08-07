@@ -109,20 +109,13 @@ console.log(Music.duration);
 $(window).on('load',function () {
   seek.addEventListener('click', (e) => {
     let duration = Math.round(Music.duration)
-    console.log(duration);
     if (!isNaN(duration)) {
       let mouse = e.pageX
       let rect = seek.getBoundingClientRect()
       let position = rect.left + window.pageXOffset//ビューポート内位置＋スクロール量（一応）
       let offset = mouse - position
       let width = rect.right - rect.left
-      console.log(mouse);
-      console.log(rect);
-      console.log(position);
-      console.log(offset);
-      console.log(width);
       Music.currentTime = Math.round(duration * (offset / width))
-      console.log(Music.currentTime);
     };
   });
 });
