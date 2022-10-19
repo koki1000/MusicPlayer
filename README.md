@@ -38,6 +38,9 @@
     <li>
     アップロード可能なファイル形式はmp3,wav,wave,aif,aac,mp4の6種類
     </li>
+    <li>
+    対応ブラウザ：Safari、FireFoxなど
+    </li>
 </ul>
 </div>
 
