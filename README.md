@@ -71,11 +71,17 @@
 <h2>使用技術（実行環境）</h2>
 <div>
 <ul>
-    <li>
-    Laravel Framework 8.83.12
+　　　　　　　<li>
+    言語：PHP8.1.5, JavaScript(jQuery),HTML, CSS
     </li>
     <li>
-    PHP 8.1.5
+    フレームワーク:Laravel Framework 8.83.12
+    </li>
+    <li>
+    DBMS：MySQL
+    </li>
+    <li>
+    開発環境：ローカル環境(MacOS), VSCode
     </li>
 </ul>
 </div>
